@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FillDataActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#8C73C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="MidtermBtuEasy"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        app:titleTextColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etRecipientNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_outlined"
+        android:hint="@string/enter_recipients_number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:scrollHorizontally="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_outlined"
+        android:hint="@string/enter_your_message_here"
+        android:lines="5"
+        android:maxLength="250"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/etRecipientNumber"
+        app:layout_constraintStart_toStartOf="@+id/etRecipientNumber"
+        app:layout_constraintTop_toBottomOf="@+id/etRecipientNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_outlined"
+        android:padding="16dp"
+        android:text="@string/send_message"
+        app:layout_constraintEnd_toEndOf="@+id/etMessage"
+        app:layout_constraintStart_toStartOf="@+id/etMessage"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

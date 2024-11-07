@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BTU Homework 1</string>
+    <string name="enter_recipients_number">Enter recipients number</string>
+    <string name="enter_your_message_here">Enter your message here</string>
+    <string name="send_message">SEND MESSAGE</string>
+    <string name="clear">Clear</string>
+    <string name="inputs_should_not_be_empty">Inputs should not be empty!</string>
+</resources>
